@@ -1,0 +1,701 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FACA170729A9F5FD00F95283 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA170629A9F5FD00F95283 /* AppDelegate.swift */; };
+		FACA170929A9F5FD00F95283 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA170829A9F5FD00F95283 /* SceneDelegate.swift */; };
+		FACA170B29A9F5FD00F95283 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA170A29A9F5FD00F95283 /* SearchBookViewController.swift */; };
+		FACA171029A9F5FF00F95283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FACA170F29A9F5FF00F95283 /* Assets.xcassets */; };
+		FACA171329A9F5FF00F95283 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACA171129A9F5FF00F95283 /* LaunchScreen.storyboard */; };
+		FACA171E29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA171D29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift */; };
+		FACA172829A9F5FF00F95283 /* FindBookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA172729A9F5FF00F95283 /* FindBookUITests.swift */; };
+		FACA172A29A9F5FF00F95283 /* FindBookUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA172929A9F5FF00F95283 /* FindBookUITestsLaunchTests.swift */; };
+		FACA173929A9FA4000F95283 /* SearchBookViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA173829A9FA4000F95283 /* SearchBookViewControllerViewModel.swift */; };
+		FACA173B29AA490000F95283 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA173A29AA490000F95283 /* SearchService.swift */; };
+		FACA173D29AD148D00F95283 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA173C29AD148D00F95283 /* SearchResult.swift */; };
+		FACA173F29AD14A100F95283 /* SearchServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA173E29AD14A100F95283 /* SearchServiceImpl.swift */; };
+		FACA174129AD14C300F95283 /* RestApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA174029AD14C300F95283 /* RestApiConfig.swift */; };
+		FACA174A29AE86AB00F95283 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA174929AE86AB00F95283 /* BookInfoViewController.swift */; };
+		FACA174C29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA174B29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift */; };
+		FACA175129AEAF7A00F95283 /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA175029AEAF7A00F95283 /* MockSearchService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FACA171A29A9F5FF00F95283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACA16FB29A9F5FD00F95283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACA170229A9F5FD00F95283;
+			remoteInfo = FindBook;
+		};
+		FACA172429A9F5FF00F95283 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FACA16FB29A9F5FD00F95283 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FACA170229A9F5FD00F95283;
+			remoteInfo = FindBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FACA170329A9F5FD00F95283 /* FindBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACA170629A9F5FD00F95283 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FACA170829A9F5FD00F95283 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FACA170A29A9F5FD00F95283 /* SearchBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
+		FACA170F29A9F5FF00F95283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FACA171229A9F5FF00F95283 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FACA171429A9F5FF00F95283 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACA171929A9F5FF00F95283 /* FindBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACA171D29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewControllerViewModelTests.swift; sourceTree = "<group>"; };
+		FACA172329A9F5FF00F95283 /* FindBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACA172729A9F5FF00F95283 /* FindBookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBookUITests.swift; sourceTree = "<group>"; };
+		FACA172929A9F5FF00F95283 /* FindBookUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindBookUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FACA173829A9FA4000F95283 /* SearchBookViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewControllerViewModel.swift; sourceTree = "<group>"; };
+		FACA173A29AA490000F95283 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		FACA173C29AD148D00F95283 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		FACA173E29AD14A100F95283 /* SearchServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceImpl.swift; sourceTree = "<group>"; };
+		FACA174029AD14C300F95283 /* RestApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestApiConfig.swift; sourceTree = "<group>"; };
+		FACA174929AE86AB00F95283 /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
+		FACA174B29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewControllerViewModel.swift; sourceTree = "<group>"; };
+		FACA175029AEAF7A00F95283 /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FACA170029A9F5FD00F95283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA171629A9F5FF00F95283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA172029A9F5FF00F95283 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FACA16FA29A9F5FD00F95283 = {
+			isa = PBXGroup;
+			children = (
+				FACA170529A9F5FD00F95283 /* FindBook */,
+				FACA171C29A9F5FF00F95283 /* FindBookTests */,
+				FACA172629A9F5FF00F95283 /* FindBookUITests */,
+				FACA170429A9F5FD00F95283 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FACA170429A9F5FD00F95283 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FACA170329A9F5FD00F95283 /* FindBook.app */,
+				FACA171929A9F5FF00F95283 /* FindBookTests.xctest */,
+				FACA172329A9F5FF00F95283 /* FindBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FACA170529A9F5FD00F95283 /* FindBook */ = {
+			isa = PBXGroup;
+			children = (
+				FACA170629A9F5FD00F95283 /* AppDelegate.swift */,
+				FACA170829A9F5FD00F95283 /* SceneDelegate.swift */,
+				FACA173729A9F66300F95283 /* Features */,
+				FACA174229AD14DC00F95283 /* RestApi */,
+				FACA170F29A9F5FF00F95283 /* Assets.xcassets */,
+				FACA171129A9F5FF00F95283 /* LaunchScreen.storyboard */,
+				FACA171429A9F5FF00F95283 /* Info.plist */,
+			);
+			path = FindBook;
+			sourceTree = "<group>";
+		};
+		FACA171C29A9F5FF00F95283 /* FindBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				FACA174D29AEAF0900F95283 /* Features */,
+			);
+			path = FindBookTests;
+			sourceTree = "<group>";
+		};
+		FACA172629A9F5FF00F95283 /* FindBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FACA172729A9F5FF00F95283 /* FindBookUITests.swift */,
+				FACA172929A9F5FF00F95283 /* FindBookUITestsLaunchTests.swift */,
+			);
+			path = FindBookUITests;
+			sourceTree = "<group>";
+		};
+		FACA173629A9F64900F95283 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FACA174429AD152D00F95283 /* View */,
+				FACA174329AD152200F95283 /* Service */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FACA173729A9F66300F95283 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FACA174829AE860700F95283 /* Book Info */,
+				FACA173629A9F64900F95283 /* Search */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FACA174229AD14DC00F95283 /* RestApi */ = {
+			isa = PBXGroup;
+			children = (
+				FACA174029AD14C300F95283 /* RestApiConfig.swift */,
+			);
+			path = RestApi;
+			sourceTree = "<group>";
+		};
+		FACA174329AD152200F95283 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FACA173A29AA490000F95283 /* SearchService.swift */,
+				FACA173E29AD14A100F95283 /* SearchServiceImpl.swift */,
+				FACA173C29AD148D00F95283 /* SearchResult.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FACA174429AD152D00F95283 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FACA170A29A9F5FD00F95283 /* SearchBookViewController.swift */,
+				FACA173829A9FA4000F95283 /* SearchBookViewControllerViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FACA174829AE860700F95283 /* Book Info */ = {
+			isa = PBXGroup;
+			children = (
+				FACA174929AE86AB00F95283 /* BookInfoViewController.swift */,
+				FACA174B29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift */,
+			);
+			path = "Book Info";
+			sourceTree = "<group>";
+		};
+		FACA174D29AEAF0900F95283 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				FACA174E29AEAF1A00F95283 /* Search */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		FACA174E29AEAF1A00F95283 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				FACA175029AEAF7A00F95283 /* MockSearchService.swift */,
+				FACA174F29AEAF2500F95283 /* view */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		FACA174F29AEAF2500F95283 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FACA171D29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FACA170229A9F5FD00F95283 /* FindBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACA172D29A9F5FF00F95283 /* Build configuration list for PBXNativeTarget "FindBook" */;
+			buildPhases = (
+				FACA16FF29A9F5FD00F95283 /* Sources */,
+				FACA170029A9F5FD00F95283 /* Frameworks */,
+				FACA170129A9F5FD00F95283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindBook;
+			productName = FindBook;
+			productReference = FACA170329A9F5FD00F95283 /* FindBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FACA171829A9F5FF00F95283 /* FindBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACA173029A9F5FF00F95283 /* Build configuration list for PBXNativeTarget "FindBookTests" */;
+			buildPhases = (
+				FACA171529A9F5FF00F95283 /* Sources */,
+				FACA171629A9F5FF00F95283 /* Frameworks */,
+				FACA171729A9F5FF00F95283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACA171B29A9F5FF00F95283 /* PBXTargetDependency */,
+			);
+			name = FindBookTests;
+			productName = FindBookTests;
+			productReference = FACA171929A9F5FF00F95283 /* FindBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FACA172229A9F5FF00F95283 /* FindBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FACA173329A9F5FF00F95283 /* Build configuration list for PBXNativeTarget "FindBookUITests" */;
+			buildPhases = (
+				FACA171F29A9F5FF00F95283 /* Sources */,
+				FACA172029A9F5FF00F95283 /* Frameworks */,
+				FACA172129A9F5FF00F95283 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACA172529A9F5FF00F95283 /* PBXTargetDependency */,
+			);
+			name = FindBookUITests;
+			productName = FindBookUITests;
+			productReference = FACA172329A9F5FF00F95283 /* FindBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FACA16FB29A9F5FD00F95283 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					FACA170229A9F5FD00F95283 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					FACA171829A9F5FF00F95283 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FACA170229A9F5FD00F95283;
+					};
+					FACA172229A9F5FF00F95283 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = FACA170229A9F5FD00F95283;
+					};
+				};
+			};
+			buildConfigurationList = FACA16FE29A9F5FD00F95283 /* Build configuration list for PBXProject "FindBook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FACA16FA29A9F5FD00F95283;
+			productRefGroup = FACA170429A9F5FD00F95283 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FACA170229A9F5FD00F95283 /* FindBook */,
+				FACA171829A9F5FF00F95283 /* FindBookTests */,
+				FACA172229A9F5FF00F95283 /* FindBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FACA170129A9F5FD00F95283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACA171329A9F5FF00F95283 /* LaunchScreen.storyboard in Resources */,
+				FACA171029A9F5FF00F95283 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA171729A9F5FF00F95283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA172129A9F5FF00F95283 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FACA16FF29A9F5FD00F95283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACA173F29AD14A100F95283 /* SearchServiceImpl.swift in Sources */,
+				FACA174A29AE86AB00F95283 /* BookInfoViewController.swift in Sources */,
+				FACA170B29A9F5FD00F95283 /* SearchBookViewController.swift in Sources */,
+				FACA170729A9F5FD00F95283 /* AppDelegate.swift in Sources */,
+				FACA174C29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift in Sources */,
+				FACA173B29AA490000F95283 /* SearchService.swift in Sources */,
+				FACA174129AD14C300F95283 /* RestApiConfig.swift in Sources */,
+				FACA173929A9FA4000F95283 /* SearchBookViewControllerViewModel.swift in Sources */,
+				FACA173D29AD148D00F95283 /* SearchResult.swift in Sources */,
+				FACA170929A9F5FD00F95283 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA171529A9F5FF00F95283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACA171E29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift in Sources */,
+				FACA175129AEAF7A00F95283 /* MockSearchService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FACA171F29A9F5FF00F95283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACA172A29A9F5FF00F95283 /* FindBookUITestsLaunchTests.swift in Sources */,
+				FACA172829A9F5FF00F95283 /* FindBookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FACA171B29A9F5FF00F95283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACA170229A9F5FD00F95283 /* FindBook */;
+			targetProxy = FACA171A29A9F5FF00F95283 /* PBXContainerItemProxy */;
+		};
+		FACA172529A9F5FF00F95283 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FACA170229A9F5FD00F95283 /* FindBook */;
+			targetProxy = FACA172429A9F5FF00F95283 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FACA171129A9F5FF00F95283 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FACA171229A9F5FF00F95283 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FACA172B29A9F5FF00F95283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FACA172C29A9F5FF00F95283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FACA172E29A9F5FF00F95283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6UY5999N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindBook/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thelinston.FindBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FACA172F29A9F5FF00F95283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6UY5999N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FindBook/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thelinston.FindBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FACA173129A9F5FF00F95283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6UY5999N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thelinston.FindBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindBook";
+			};
+			name = Debug;
+		};
+		FACA173229A9F5FF00F95283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6UY5999N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thelinston.FindBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FindBook.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FindBook";
+			};
+			name = Release;
+		};
+		FACA173429A9F5FF00F95283 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6UY5999N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thelinston.FindBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindBook;
+			};
+			name = Debug;
+		};
+		FACA173529A9F5FF00F95283 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5H6UY5999N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thelinston.FindBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FindBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FACA16FE29A9F5FD00F95283 /* Build configuration list for PBXProject "FindBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACA172B29A9F5FF00F95283 /* Debug */,
+				FACA172C29A9F5FF00F95283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACA172D29A9F5FF00F95283 /* Build configuration list for PBXNativeTarget "FindBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACA172E29A9F5FF00F95283 /* Debug */,
+				FACA172F29A9F5FF00F95283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACA173029A9F5FF00F95283 /* Build configuration list for PBXNativeTarget "FindBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACA173129A9F5FF00F95283 /* Debug */,
+				FACA173229A9F5FF00F95283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FACA173329A9F5FF00F95283 /* Build configuration list for PBXNativeTarget "FindBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACA173429A9F5FF00F95283 /* Debug */,
+				FACA173529A9F5FF00F95283 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FACA16FB29A9F5FD00F95283 /* Project object */;
+}
