@@ -11,6 +11,8 @@ import Foundation
 
 class MockSearchService: SearchService {
     
+    func cancel() { }
+    
     func search(with text: String, completionHandler: @escaping (Result<[FindBook.BookInfo], Error>) -> Void) {
         completionHandler(.success([
             BookInfo(

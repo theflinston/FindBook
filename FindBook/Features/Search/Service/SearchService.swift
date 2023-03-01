@@ -9,5 +9,7 @@ import Foundation
 
 protocol SearchService {
     func search(with text: String, completionHandler: @escaping (Result< [BookInfo], Error>) -> Void )
+    
+    func cancel()
 }
 

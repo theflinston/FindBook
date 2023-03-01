@@ -23,6 +23,7 @@
 		FACA174A29AE86AB00F95283 /* BookInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA174929AE86AB00F95283 /* BookInfoViewController.swift */; };
 		FACA174C29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA174B29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift */; };
 		FACA175129AEAF7A00F95283 /* MockSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA175029AEAF7A00F95283 /* MockSearchService.swift */; };
+		FACA175729AF7BD000F95283 /* BookInfoViewControllerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACA175629AF7BD000F95283 /* BookInfoViewControllerViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FACA174929AE86AB00F95283 /* BookInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewController.swift; sourceTree = "<group>"; };
 		FACA174B29AE86BA00F95283 /* BookInfoViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewControllerViewModel.swift; sourceTree = "<group>"; };
 		FACA175029AEAF7A00F95283 /* MockSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchService.swift; sourceTree = "<group>"; };
+		FACA175629AF7BD000F95283 /* BookInfoViewControllerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoViewControllerViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 		FACA174D29AEAF0900F95283 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				FACA175529AF7BBF00F95283 /* Book Info */,
 				FACA174E29AEAF1A00F95283 /* Search */,
 			);
 			path = Features;
@@ -218,6 +221,14 @@
 				FACA171D29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		FACA175529AF7BBF00F95283 /* Book Info */ = {
+			isa = PBXGroup;
+			children = (
+				FACA175629AF7BD000F95283 /* BookInfoViewControllerViewModelTests.swift */,
+			);
+			path = "Book Info";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 			files = (
 				FACA171E29A9F5FF00F95283 /* SearchBookViewControllerViewModelTests.swift in Sources */,
 				FACA175129AEAF7A00F95283 /* MockSearchService.swift in Sources */,
+				FACA175729AF7BD000F95283 /* BookInfoViewControllerViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ final class SearchServiceImpl: SearchService {
     
     private let searchPath = "search.json"
     
-    var urlSessionDataTask: URLSessionDataTask?
+    private var urlSessionDataTask: URLSessionDataTask?
     
     private let restConfig: RestApiConfig
     init(restConfig: RestApiConfig) {
@@ -61,6 +61,11 @@ final class SearchServiceImpl: SearchService {
             
         }
         urlSessionDataTask?.resume()
+    }
+    
+    func cancel() {
+        urlSessionDataTask?.cancel()
+        urlSessionDataTask = nil
     }
     
 }
